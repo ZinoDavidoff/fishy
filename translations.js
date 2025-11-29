@@ -1,6 +1,6 @@
 const translations = {
     sq: {
-        'logo': '🐟 Restorant Deti',
+        'logo': '🐟',
         'nav-home': 'Shtëpia',
         'nav-menu': 'Meny',
         'nav-gallery': 'Galeria',
@@ -64,7 +64,7 @@ const translations = {
         'footer-copyright': '© 2024 Restorant Deti. Të gjitha të drejtat e rezervuara.'
     },
     en: {
-        'logo': '🐟 Sea Restaurant',
+        'logo': '🐟',
         'nav-home': 'Home',
         'nav-menu': 'Menu',
         'nav-gallery': 'Gallery',
@@ -128,7 +128,7 @@ const translations = {
         'footer-copyright': '© 2024 Sea Restaurant. All rights reserved.'
     },
     it: {
-        'logo': '🐟 Ristorante del Mare',
+        'logo': '🐟',
         'nav-home': 'Casa',
         'nav-menu': 'Menu',
         'nav-gallery': 'Galleria',
