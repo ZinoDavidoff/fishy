@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restorant Deti - Fish Restaurant</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-translate="logo">🐟 Restorant Deti</div>
+            <ul class="nav-links">
+                <li><a href="#home" data-translate="nav-home">Shtëpia</a></li>
+                <li><a href="#menu" data-translate="nav-menu">Meny</a></li>
+                <li><a href="#gallery" data-translate="nav-gallery">Galeria</a></li>
+                <li><a href="#testimonials" data-translate="nav-testimonials">Komente</a></li>
+                <li><a href="#footer" data-translate="nav-contact">Kontakt</a></li>
+            </ul>
+            <div class="lang-switcher">
+                <button class="lang-dropdown-btn" id="langDropdownBtn">
+                    <span class="lang-current">SQ</span>
+                    <span class="lang-arrow">▼</span>
+                </button>
+                <div class="lang-dropdown-menu" id="langDropdownMenu">
+                    <a href="#" class="lang-option active" data-lang="sq">SQ - Shqip</a>
+                    <a href="#" class="lang-option" data-lang="en">EN - English</a>
+                    <a href="#" class="lang-option" data-lang="it">IT - Italiano</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Slider -->
+    <section class="hero" id="home">
+        <div class="hero-slider">
+            <div class="slide active" style="background-image: url('https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=1920')"></div>
+            <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1559339352-11d035aa65de?w=1920')"></div>
+            <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1558030006-450675393462?w=1920')"></div>
+        </div>
+        <div class="hero-content">
+            <h1 data-translate="hero-title">Përvojë e Papërsëritur me Peshk</h1>
+            <p data-translate="hero-subtitle">Shijoni specialitetet më të mira detare në qytetin tonë</p>
+            <a href="#menu" class="cta-btn" data-translate="hero-cta">Shiko Menynë</a>
+        </div>
+        <div class="wave"></div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section">
+        <h2 class="section-title" data-translate="menu-title">Menyja Jonë</h2>
+        <div class="menu-filters">
+            <button class="filter-btn active" data-filter="all" data-translate="filter-all">Të Gjitha</button>
+            <button class="filter-btn" data-filter="appetizer" data-translate="filter-appetizer">Hors d'oeuvres</button>
+            <button class="filter-btn" data-filter="main" data-translate="filter-main">Pjata Kryesore</button>
+            <button class="filter-btn" data-filter="dessert" data-translate="filter-dessert">Ëmbëlsira</button>
+        </div>
+        <div class="menu-wrapper">
+            <div class="menu-column">
+                <div class="menu-category" data-category="appetizer">
+                    <h3 class="menu-category-title" data-translate="filter-appetizer">Hors d'oeuvres</h3>
+                    <div class="menu-item" data-category="appetizer">
+                        <div class="menu-item-header">
+                            <h4 class="menu-item-name" data-translate="dish-1-name">Carpaccio i Peshkut</h4>
+                            <span class="menu-item-price">€18</span>
+                        </div>
+                        <p class="menu-item-description" data-translate="dish-1-desc">Peshk i freskët i prerë hollë me vaj ulliri dhe limon</p>
+                    </div>
+                    <div class="menu-item" data-category="appetizer">
+                        <div class="menu-item-header">
+                            <h4 class="menu-item-name" data-translate="dish-2-name">Ostera të Freskëta</h4>
+                            <span class="menu-item-price">€24</span>
+                        </div>
+                        <p class="menu-item-description" data-translate="dish-2-desc">Ostera premium me limon dhe shallot</p>
+                    </div>
+                </div>
+                <div class="menu-category" data-category="main">
+                    <h3 class="menu-category-title" data-translate="filter-main">Pjata Kryesore</h3>
+                    <div class="menu-item" data-category="main">
+                        <div class="menu-item-header">
+                            <h4 class="menu-item-name" data-translate="dish-3-name">Peshk i Pjekur në Zjarr</h4>
+                            <span class="menu-item-price">€32</span>
+                        </div>
+                        <p class="menu-item-description" data-translate="dish-3-desc">Peshk i zgjedhur ditorisht me perime të freskëta</p>
+                    </div>
+                    <div class="menu-item" data-category="main">
+                        <div class="menu-item-header">
+                            <h4 class="menu-item-name" data-translate="dish-4-name">Pasta me Fruta Deti</h4>
+                            <span class="menu-item-price">€28</span>
+                        </div>
+                        <p class="menu-item-description" data-translate="dish-4-desc">Pasta freskë me karkaleca, midhje dhe kërmak</p>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-column">
+                <div class="menu-category" data-category="main">
+                    <h3 class="menu-category-title" data-translate="filter-main">Pjata Kryesore</h3>
+                    <div class="menu-item" data-category="main">
+                        <div class="menu-item-header">
+                            <h4 class="menu-item-name" data-translate="dish-5-name">Garnal i Pjekur</h4>
+                            <span class="menu-item-price">€45</span>
+                        </div>
+                        <p class="menu-item-description" data-translate="dish-5-desc">Garnal i madh me gjalpë dhe hudhër</p>
+                    </div>
+                    <div class="menu-item" data-category="main">
+                        <div class="menu-item-header">
+                            <h4 class="menu-item-name" data-translate="dish-6-name">Supë Peshku Tradicionale</h4>
+                            <span class="menu-item-price">€22</span>
+                        </div>
+                        <p class="menu-item-description" data-translate="dish-6-desc">Supë e pasur me peshk të freskët dhe perime</p>
+                    </div>
+                </div>
+                <div class="menu-category" data-category="dessert">
+                    <h3 class="menu-category-title" data-translate="filter-dessert">Ëmbëlsira</h3>
+                    <div class="menu-item" data-category="dessert">
+                        <div class="menu-item-header">
+                            <h4 class="menu-item-name" data-translate="dish-7-name">Tiramisu Deti</h4>
+                            <span class="menu-item-price">€12</span>
+                        </div>
+                        <p class="menu-item-description" data-translate="dish-7-desc">Tiramisu klasik me një prekje detare</p>
+                    </div>
+                    <div class="menu-item" data-category="dessert">
+                        <div class="menu-item-header">
+                            <h4 class="menu-item-name" data-translate="dish-8-name">Gelato me Aroma Deti</h4>
+                            <span class="menu-item-price">€10</span>
+                        </div>
+                        <p class="menu-item-description" data-translate="dish-8-desc">Gelato artizanal me shije unike</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <h2 class="section-title" data-translate="gallery-title">Galeria</h2>
+        <div class="gallery-slider-container">
+            <div class="gallery-carousel">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=800" alt="Dish 1">
+                </div>
+                <div class="gallery-item gallery-item--left">
+                    <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=800" alt="Dish 2">
+                </div>
+                <div class="gallery-item gallery-item--main">
+                    <img src="https://images.unsplash.com/photo-1558030006-450675393462?w=800" alt="Dish 3">
+                </div>
+                <div class="gallery-item gallery-item--right">
+                    <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=800" alt="Dish 4">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=800" alt="Dish 5">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1558030006-450675393462?w=800" alt="Dish 6">
+                </div>
+            </div>
+            <div class="gallery-btns">
+                <button class="gallery-btn" id="galleryLeftBtn">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M15 18l-6-6 6-6"/>
+                    </svg>
+                </button>
+                <button class="gallery-btn" id="galleryRightBtn">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 18l6-6-6-6"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials-section">
+        <h2 class="section-title" data-translate="testimonials-title">Çfarë Thonë Klientët</h2>
+        <div class="testimonials-slider-container">
+            <button class="testimonials-prev" onclick="changeTestimonialsSlide(-1)">‹</button>
+            <div class="testimonials-slider">
+                <div class="testimonials-track">
+                    <div class="testimonial-card">
+                        <div class="testimonial-avatar">
+                            <img src="https://i.pravatar.cc/150?img=47" alt="Maria">
+                        </div>
+                        <div class="testimonial-text" data-translate="testimonial-1-text">
+                            "Peshku më i mirë që kam shijuar ndonjëherë! Atmosfera është e mrekullueshme dhe shërbimi është i shkëlqyer."
+                        </div>
+                        <div class="testimonial-author" data-translate="testimonial-1-author">- Maria K.</div>
+                        <div class="stars">★★★★★</div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-avatar">
+                            <img src="https://i.pravatar.cc/150?img=33" alt="Gjergj">
+                        </div>
+                        <div class="testimonial-text" data-translate="testimonial-2-text">
+                            "Restorant i mrekullueshëm! Menyja është e pasur dhe çdo pjatë është një vepër arti. Do të kthehem patjetër!"
+                        </div>
+                        <div class="testimonial-author" data-translate="testimonial-2-author">- Gjergj D.</div>
+                        <div class="stars">★★★★★</div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-avatar">
+                            <img src="https://i.pravatar.cc/150?img=20" alt="Ana">
+                        </div>
+                        <div class="testimonial-text" data-translate="testimonial-3-text">
+                            "Cilësia e peshkut është e jashtëzakonshme. Rekomandoj këtë restorant për të gjithë dashamirët e peshkut!"
+                        </div>
+                        <div class="testimonial-author" data-translate="testimonial-3-author">- Ana L.</div>
+                        <div class="stars">★★★★★</div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-avatar">
+                            <img src="https://i.pravatar.cc/150?img=12" alt="Marko">
+                        </div>
+                        <div class="testimonial-text" data-translate="testimonial-4-text">
+                            "Një përvojë e papërsëritur! Stafi është shumë profesional dhe pjatat janë të shijshme. 10/10!"
+                        </div>
+                        <div class="testimonial-author" data-translate="testimonial-4-author">- Marko S.</div>
+                        <div class="stars">★★★★★</div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-avatar">
+                            <img src="https://i.pravatar.cc/150?img=68" alt="Elena">
+                        </div>
+                        <div class="testimonial-text">
+                            "Ambient i mrekullueshëm dhe peshk i shkëlqyer! Kjo është restoranti më i mirë në qytet."
+                        </div>
+                        <div class="testimonial-author">- Elena M.</div>
+                        <div class="stars">★★★★★</div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-avatar">
+                            <img src="https://i.pravatar.cc/150?img=51" alt="Dritan">
+                        </div>
+                        <div class="testimonial-text">
+                            "Shërbim i shkëlqyer dhe pjatat janë të shijshme. Do të vij sërish me familjen time!"
+                        </div>
+                        <div class="testimonial-author">- Dritan H.</div>
+                        <div class="stars">★★★★★</div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-avatar">
+                            <img src="https://i.pravatar.cc/150?img=27" alt="Sara">
+                        </div>
+                        <div class="testimonial-text">
+                            "Peshk i freskët dhe gatim i shkëlqyer! Atmosfera është e mrekullueshme."
+                        </div>
+                        <div class="testimonial-author">- Sara B.</div>
+                        <div class="stars">★★★★★</div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-avatar">
+                            <img src="https://i.pravatar.cc/150?img=44" alt="Arben">
+                        </div>
+                        <div class="testimonial-text">
+                            "Restorant i klasit të lartë! Rekomandoj për çdo rast special."
+                        </div>
+                        <div class="testimonial-author">- Arben K.</div>
+                        <div class="stars">★★★★★</div>
+                    </div>
+                </div>
+            </div>
+            <button class="testimonials-next" onclick="changeTestimonialsSlide(1)">›</button>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="footer-content">
+            <div class="footer-top">
+                <div class="footer-section">
+                    <h3 class="footer-title" data-translate="footer-about-title">Rreth Nesh</h3>
+                    <p class="footer-description" data-translate="footer-about">Restorant Deti ofron specialitete të shkëlqyera detare me peshk të freskët dhe gatim tradicionale.</p>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title" data-translate="footer-links-title">Linqe</h3>
+                    <div class="footer-links">
+                        <a href="#home" data-translate="footer-home">Shtëpia</a>
+                        <a href="#menu" data-translate="footer-menu">Meny</a>
+                        <a href="#gallery" data-translate="footer-gallery">Galeria</a>
+                        <a href="#testimonials" data-translate="footer-testimonials">Komente</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title" data-translate="footer-contact-title">Kontakt</h3>
+                    <p class="footer-info">📍 <span data-translate="contact-address">Rruga Detare, Nr. 123, Tiranë</span></p>
+                    <p class="footer-info">📞 +355 4X XXX XXXX</p>
+                    <p class="footer-info">✉️ info@restorantdeti.com</p>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title" data-translate="footer-social-title">Rrjetet Sociale</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">📘</a>
+                        <a href="#" class="social-link" aria-label="Instagram">📷</a>
+                        <a href="#" class="social-link" aria-label="Twitter">🐦</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-translate="footer-copyright">&copy; 2024 Restorant Deti. Të gjitha të drejtat e rezervuara.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal for Gallery -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-img" src="" alt="">
+        <button class="lightbox-prev">‹</button>
+        <button class="lightbox-next">›</button>
+    </div>
+
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
